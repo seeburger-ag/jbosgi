@@ -28,7 +28,7 @@
         <wildfly.patch.file>${project.build.directory}/${project.artifactId}-${project.version}-patch</wildfly.patch.file>
         <jboss.home>${project.build.directory}/wildfly-${version.jboss.wildfly}</jboss.home>
     </properties>
-    
+
     <!-- Dependencies -->
     <dependencies>
         <dependency>
@@ -122,8 +122,9 @@
             <artifactId>arquillian-junit-container</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wildfly</groupId>
+            <groupId>org.wildfly.arquillian</groupId>
             <artifactId>wildfly-arquillian-container-managed</artifactId>
+            <version>1.0.0.Final</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.arquillian.container</groupId>

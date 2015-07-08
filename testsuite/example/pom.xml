@@ -9,12 +9,12 @@
 <!--                                                                        -->
 <!-- ====================================================================== -->
 
-<!-- 
+<!--
 
-  Set these VM properties in your IDE debugger 
+  Set these VM properties in your IDE debugger
 
   -Djava.util.logging.manager=org.jboss.logmanager.LogManager
-  -Dtest.archive.directory=${workspace_loc:jbosgi-testsuite-example/target}/test-libs 
+  -Dtest.archive.directory=${workspace_loc:jbosgi-testsuite-example/target}/test-libs
 -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -201,9 +201,9 @@
             </activation>
             <dependencies>
                 <dependency>
-                    <groupId>org.wildfly</groupId>
+                    <groupId>org.wildfly.core</groupId>
                     <artifactId>wildfly-controller-client</artifactId>
-                    <version>${version.jboss.wildfly.stable}</version>
+                    <version>${version.org.wildfly.core}</version>
                 </dependency>
             </dependencies>
             <build>
@@ -243,9 +243,9 @@
             </activation>
             <dependencies>
                 <dependency>
-                    <groupId>org.wildfly</groupId>
+                    <groupId>org.wildfly.core</groupId>
                     <artifactId>wildfly-controller-client</artifactId>
-                    <version>${version.jboss.wildfly}</version>
+                    <version>${version.org.wildfly.core}</version>
                 </dependency>
             </dependencies>
             <build>

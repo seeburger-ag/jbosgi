@@ -172,8 +172,9 @@
             </properties>
             <dependencies>
                 <dependency>
-                    <groupId>org.wildfly</groupId>
+                    <groupId>org.wildfly.arquillian</groupId>
                     <artifactId>wildfly-arquillian-container-managed</artifactId>
+                    <version>${version.org.wildfly.arquillian}</version>
                     <scope>test</scope>
                 </dependency>
                 <dependency>

@@ -31,7 +31,7 @@
     </parent>
 
     <name>JBossOSGi WildFly Integration: JPA</name>
-    
+
     <artifactId>jbosgi-wildfly-jpa</artifactId>
     <packaging>bundle</packaging>
 
@@ -45,7 +45,7 @@
             <artifactId>wildfly-jpa</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wildfly</groupId>
+            <groupId>org.wildfly.core</groupId>
             <artifactId>wildfly-server</artifactId>
         </dependency>
     </dependencies>
@@ -75,16 +75,16 @@
                             org.jboss.osgi.framework.spi,
                             org.jboss.osgi.resolver,
                             org.osgi.framework;version="[1.5,2)",
-                            !org.jboss.as.controller*, 
+                            !org.jboss.as.controller*,
                             !org.jboss.as.jpa*,
-                            !org.jboss.as.osgi*, 
+                            !org.jboss.as.osgi*,
                             !org.jboss.as.server*
                         </Import-Package>
                         <!-- Import-Package>
-                            javax.servlet;version="[3.0,4.0)", 
+                            javax.servlet;version="[3.0,4.0)",
                             javax.servlet.http;version="[3.0,4.0)",
-                            javax.management, 
-                            javax.security.auth.x500, 
+                            javax.management,
+                            javax.security.auth.x500,
                             org.osgi.framework;version="[1.5,2.0)",
                         	org.osgi.service.http;version="[1.2.1,1.2.2)",
                             org.jboss.logging,
@@ -99,12 +99,12 @@
                             org.jboss.osgi.framework,
                             org.jboss.osgi.framework.spi,
                             org.jboss.osgi.resolver,
-                            !org.apache.catalina*, 
-                            !org.apache.tomcat*, 
-                            !org.jboss.as.controller*, 
-                            !org.jboss.as.osgi*, 
-                            !org.jboss.as.server*, 
-                            !org.jboss.as.web*, 
+                            !org.apache.catalina*,
+                            !org.apache.tomcat*,
+                            !org.jboss.as.controller*,
+                            !org.jboss.as.osgi*,
+                            !org.jboss.as.server*,
+                            !org.jboss.as.web*,
 							</Import-Package -->
                     </instructions>
                 </configuration>
