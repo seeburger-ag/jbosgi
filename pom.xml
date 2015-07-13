@@ -28,14 +28,16 @@
 
     <!-- Source Control -->
     <scm>
-        <connection>scm:git:git://github.com/jbosgi/jbosgi.git</connection>
-        <developerConnection>scm:git:git@github.com:jbosgi/jbosgi.git</developerConnection>
-        <url>http://github.com/jbosgi/jbosgi</url>
-        <tag>HEAD</tag>
+        <connection>scm:git:git://github.com/seeburger-ag/jbosgi.git</connection>
+        <developerConnection>scm:git:git@github.com:seeburger-ag/jbosgi.git</developerConnection>
+        <url>http://github.com/seeburger-ag/jbosgi</url>
     </scm>
 
     <!-- Properties -->
     <properties>
+        <jboss.snapshots.repo.url>https://repo.seeburger.de/archiva/repository/snapshot/</jboss.snapshots.repo.url>
+        <jboss.releases.repo.url>https://repo.seeburger.de/archiva/repository/release/</jboss.releases.repo.url>
+
         <version.jboss.wildfly>9.0.0.Final</version.jboss.wildfly>
         <version.org.wildfly.core>1.0.0.Final</version.org.wildfly.core>
         <version.org.wildfly.arquillian>1.0.0.Final</version.org.wildfly.arquillian>
